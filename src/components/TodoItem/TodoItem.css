@@ -1,0 +1,52 @@
+.task-card {
+    border       : 2px solid rgba(216, 216, 216, 0.4);
+    border-radius: 16px;
+    width        : 100%;
+    display      : flex;
+    gap          : 10px;
+    align-items  : center;
+    padding      : 10px;
+    box-sizing   : border-box;
+}
+
+.task-card:hover {
+    background-color: rgba(216, 216, 216, 0.05);
+    border-color    : #fff;
+    cursor          : pointer;
+}
+
+.task-completed p {
+    text-decoration: line-through;
+}
+
+.trash-container {
+    margin-left: auto;
+}
+
+.trash-icon {
+    margin-left     : auto;
+    background-color: #E8000010;
+    border-radius   : 12px;
+    padding         : 10px;
+    color           : red;
+    width           : 40px;
+    height          : 40px;
+    box-sizing      : border-box;
+}
+
+.check-icon {
+    margin-left     : auto;
+    background-color: #171717;
+    border-radius   : 12px;
+    padding         : 10px;
+    color           : #fff;
+    width           : 40px;
+    height          : 40px;
+    box-sizing      : border-box;
+    cursor          : pointer;
+}
+
+.check-icon.checked {
+    background-color: #00BA0610;
+    color           : #00BA06;
+}

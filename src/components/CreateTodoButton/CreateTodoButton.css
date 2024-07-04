@@ -1,0 +1,38 @@
+.button-create-container {
+    display        : flex;
+    justify-content: flex-end;
+}
+
+.primary-btn {
+    height       : 56px;
+    width        : 56px;
+    border-radius: 100%;
+    background   : rgb(65, 54, 241);
+    background   : linear-gradient(100deg, rgba(65, 54, 241, 1) 0%, rgba(135, 67, 255, 1) 100%);
+    color        : #fff;
+    border       : unset;
+    font-size    : 26px;
+    position     : relative;
+}
+
+.primary-btn:hover {
+    cursor    : pointer;
+    box-shadow: 0px 12px 23px -12px rgba(135, 67, 255, 0.74);
+}
+
+.primary-btn:hover::before {
+    position        : relative;
+    content         : 'Crear tarea';
+    font-size       : 16px;
+    display         : inline-block;
+    border-color    : transparent transparent transparent black;
+    background-color: black;
+    color           : #fff;
+    text-align      : center;
+    padding         : 5px;
+    border-radius   : 6px;
+    position        : absolute;
+    z-index         : 1;
+    right           : -100px;
+    bottom          : 15px;
+}

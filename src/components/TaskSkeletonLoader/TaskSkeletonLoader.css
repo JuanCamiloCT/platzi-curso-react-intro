@@ -1,0 +1,25 @@
+.item-skeleton-contaoner {
+  border       : 1px solid #fff;
+  border-radius: 16px;
+  width        : 100%;
+  display      : flex;
+  gap          : 10px;
+  align-items  : center;
+  padding      : 10px;
+  box-sizing   : border-box;
+  height       : 76.5px;
+  overflow     : hidden;
+  position     : relative;
+  background   : linear-gradient(to right, rgb(33, 33, 33) 0%, rgb(46, 46, 46) 50%, rgb(30, 30, 29) 100%) 0px 0px / 100% 100% rgb(23, 23, 23);
+  animation    : linearAnim 2s infinite linear
+}
+
+@keyframes linearAnim {
+  0% {
+    background-position: 0px 0px;
+  }
+
+  100% {
+    background-position: 230px 0px;
+  }
+}
